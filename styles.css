@@ -30,7 +30,6 @@ ul li, ol li {
 
 a {
   text-decoration: none;
-  color: #007acc;
   transition: color 0.3s ease;
 }
 
@@ -50,7 +49,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.3rem;
+  font-size: 2.7rem;
   font-weight: 400;
   margin-bottom: 5px; 
 }
@@ -228,10 +227,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px; 
-  width: 80%;
-  max-width: 800px; 
-  margin: 40px auto;
+  padding: 20px; 
+  width: 100%;
+  margin:0 auto;
   border-radius: 10px; 
   z-index: 1; 
 }
@@ -241,16 +239,14 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px; 
-  width: 80%;
-  max-width: 800px; 
-  margin: 40px auto;
+  padding: 20px; 
+  width: 100%;
+  margin: 10px auto;
   border-radius: 10px;
   z-index: 1; 
 }
 
 .post-title {
-  font-family: "Darker Grotesque", sans-serif;
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 10px;
@@ -260,7 +256,6 @@ a:hover {
 .post-meta {
   color: #777;
   font-size: 0.9em;
-  margin-bottom: 20px; /* Space below meta */
   text-align: center;
   width: 100%;
 }
@@ -323,13 +318,20 @@ a:hover {
 
 
 @media (min-width: 1200px) {
+  .post-container { 
+    width: 80%;
+
+  }
+  .post-page-container {
+    max-width: 80%;
+  }
   .header-title {
     font-size: 3.3rem;
   }
 
   .header-tulip {
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 70px;
+    max-height: 70px;
     margin-right: 20px;
   }
 
@@ -343,99 +345,6 @@ a:hover {
 
   .post-container ul {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-@media (max-width: 1199px) and (min-width: 768px) {
-  .header-title {
-    font-size: 3rem;
-  }
-
-  .header-tulip {
-    max-width: 80px;
-    max-height: 80px;
-    margin-right: 15px;
-  }
-
-  .post-container {
-    width: 85%;
-    padding: 35px 15px;
-  }
-
-  .post-title {
-    font-size: 2.2rem;
-  }
-
-  .post-content {
-    font-size: 1.1rem;
-  }
-
-  .post-container ul {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-}
-
-@media (max-width: 767px) {
-  .header-title {
-    font-size: 2.5rem;
-  }
-
-  .header-tulip {
-    max-width: 70px;
-    max-height: 70px;
-    margin-right: 10px;
-  }
-
-  .post-container {
-    width: 90%;
-    padding: 30px 10px;
-  }
-
-  .post-title {
-    font-size: 2rem;
-  }
-
-  .post-content {
-    font-size: 1rem;
-  }
-
-  /* Adjust grid columns */
-  .post-container ul {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  }
-}
-
-/* Extra Small Screens */
-@media (max-width: 480px) {
-  .header-title {
-    font-size: 5rem!important;
-  }
-
-  .bio {
-    font-size: 1.25rem;
-  }
-
-  .header-tulip {
-    max-width: 60px;
-    max-height: 60px;
-    margin-right: 5px;
-  }
-
-  .post-container {
-    width: 95%;
-    padding: 20px 5px;
-  }
-
-  .post-title {
-    font-size: 1.8rem;
-  }
-
-  .post-content {
-    font-size: 0.9rem;
-  }
-
-  .post-container ul {
-    grid-template-columns: 1fr;
   }
 }
 
