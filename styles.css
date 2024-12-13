@@ -134,11 +134,30 @@ a:hover {
 .post-meta {
   color: #777;
   font-size: 0.9em;
-  text-align: center;
+  display: block;
   width: 100%;
 }
 
+.post-meta-main {
+  text-align: center;
+}
+
+.post-category {
+  background-color: hsla(293, 30%, 54%, 0.75);
+  padding: 3px 6px;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.block-cat {
+  margin-top: 10px;
+  display: block;
+}
+
 .post-content {
+  margin-top: 10px;
   font-size: 1.2rem;
   line-height: 1.8;
   color: #333;
